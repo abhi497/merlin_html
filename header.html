@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Surgical Direction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!--fontawesome kit-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <script src="https://kit.fontawesome.com/b99e675b6e.js"></script> -->
+  
+  <!-- jQuery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+  
+  <!--custom style-->
+  <link href="assets/css/header.css" rel="stylesheet">
+  <link href="assets/css/sidebar.css" rel="stylesheet">
+
+</head>
+<body>	
+
+	<div class="navigation-wrap bg-light start-header start-style">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-expand-md navbar-light">
+				
+					<a class="navbar-brand" href="https://front.codes/" target="_blank"><img class="logo" src="image/Image 5.png" alt=""></a>	<form action="#" method="get" class="searchform navbar-form" role="search">
+					<form action="#" method="get" class="searchform navbar-form" role="search">
+						<input type="hidden" value="search" name="view">
+						<div class="input-group search_input">
+							<input type="text"  name="searchword" required class="form-control search_bar" placeholder="Newark Beth Israel Medical Facility Center" name="q">
+							<div>
+								<img class="dropdown_icon" src="image/Group 484.png"/>
+							</div>
+						</div>
+					</form>
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto py-4 py-md-0">
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="#">Core</a>
+							</li>
+							<!-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Core</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Another action</a>
+								</div>
+							</li> -->
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="#">Block</a>
+							</li>
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="#">Heatmap</a>
+							</li>
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="#">Navigator</a>
+							</li>
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="#"><img class="search_icon" src="image/search copy.png"/></a>
+							</li>
+						</ul>
+					</div>
+					
+				</nav>		
+			</div>
+		</div>
+	</div>
+  
+	<div class="wrapper" id="sidebar">
+		<div class="main_container">
+			<div class="sidebar d-flex flex-column">
+				<div class="top_navbar">
+					<div class="toggler">
+						<img onclick="toggleSidebar(event)" src="image/menuclose.png" width="52px" height="42px" alt="toggler image"/>
+					</div>
+				</div>
+				<div class="sidebar__inner flex-fill">
+					<!-- <div class="profile on_hover border_bottom">
+						<div class="img">
+							<img src="image/Mask Group 147.png" alt="profile_pic">
+						</div>
+						<span>
+							<p class="trial">Trial</p>
+
+							<div class="profile_info">
+								<p>Welcome</p>
+								<p class="profile_name">Michael Besedick</p>
+								</div>
+						</span>
+					<span class="arrow_icon"><img src="image/Path 41.png" /></span>
+					</div> -->
+					<ul>
+					<li class="on_hover border_bottom">
+						<a href="#" class="active" data-toggle="collapse" data-target="#profile_submenu">
+							<span class="profile_icon"><img src="image/Mask Group 147.png" alt="profile_pic" width="32px" height="32px"></span>
+							<div class="profile_info flex-fill">
+								<p class="welcome">Welcome</p>
+								<p class="profile_name">Michael Besedick</p>
+							</div>
+							<span class="arrow_icon"><img src="image/Path 41.png" /></span>
+						</a>
+						<div class="sidebar-submenu collapse" id="profile_submenu">
+							<ul>
+								<li>
+									<a href="#" class="submenu">My Profile</a>
+								</li>
+								<li>
+									<a href="#" class="submenu">Manage Subscription</a>
+								</li><li>
+									<a href="#" class="submenu">Manage Modules</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="on_hover border_bottom">
+						<a href="#">
+						<span class="icon"><img src="image/exchange.png" alt="exchange_pic"></span>
+						<span class="title">Change Client</span>
+						</a>
+					</li>
+					<!-- <li class="on_hover border_bottom">
+						<a href="#">
+						<span class="icon"><img src="image/settings copy.png" alt="settings_pic"></span>
+						<span class="title">Configurations</span>
+						</a>
+					</li> -->
+					<li class="sidebar-dropdown on_hover border_bottom">
+						<a href="#" data-toggle="collapse" data-target="#configurations_submenu">
+							<span class="icon"><img src="image/settings copy.png" alt="settings_pic"></span>
+							<span class="title flex-fill">Configurations</span>
+						<span class="arrow_icon"><img src="image/Path 41.png" /></span>
+						</a>
+						<div class="sidebar-submenu collapse" id="configurations_submenu">
+							<ul>
+								<li>
+									<a href="#" class="submenu">Dashboard 1</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="on_hover border_bottom">
+						<a href="#">
+						<span class="icon"><img src="image/upload.png" alt="upload_pic"></span>
+						<span class="title">Fie Upload</span>
+						</a>
+					</li>
+					<li class="on_hover border_bottom">
+						<a href="#">
+						<span class="icon"><img src="image/clock.png" alt="clock_pic"></span>
+						<span class="title">Navigator Support</span>
+						</a>
+					</li>
+					<li class="sidebar-dropdown on_hover">
+						<a href="#" data-toggle="collapse" data-target="#help_submenu">
+						<span class="icon"><img src="image/help.png" alt="help_pic"></span>
+						<span class="title flex-fill">Help Center</span>
+						<span class="arrow_icon"><img src="image/Path 41.png" /></span>
+						</a>
+						<div class="sidebar-submenu collapse" id="help_submenu">
+							<ul>
+								<li>
+									<a href="#" class="submenu">Dashboard 1</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					</ul>
+				</div>
+				<div class="sidebar-footer">
+					<div class="flex-footer-wrapper d-flex">
+						<div class="img mr-1">
+							<img src="image/Group 318.png" alt="logout_pic">
+						</div>
+						<span>
+							<div class="logout_button_info">
+								<p class="logout_button_name">Logout</p>
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
+
+</body>
+
+<script>
+	function toggleSidebar(e) {
+		const toggler = e.target;
+		console.log(e);
+		if(e.target.attributes[1].nodeValue === 'image/menuclose.png') {
+			toggler.setAttribute('src', 'image/Group.png');
+		} else {
+			toggler.setAttribute('src', 'image/menuclose.png');
+		}
+		const sidebar = document.querySelector('.sidebar');
+		sidebar.classList.toggle('open');
+	}
+</script>
+
+<!-- <script>
+
+  Startup Scripts
+$(document).ready(function()
+{
+	$('.hero').css('height', ($(window).height() - $('header').outerHeight()) + 'px'); // Set hero to fill page height
+
+	$('#scroll-hero').click(function()
+	{
+		$('html,body').animate({scrollTop: $("#hero-bloc").height()}, 'slow');
+	});
+});
+
+
+Window resize 
+$(window).resize(function()
+{
+	$('.hero').css('height', ($(window).height() - $('header').outerHeight()) + 'px'); // Refresh hero height  	
+}); 
+</script> -->
+<!-- <script>
+	$(document).ready(function(){
+		$(".hamburger .hamburger__inner").click(function(){
+		  $(".wrapper").toggleClass("active")
+		})
+
+		$(".top_navbar .fas").click(function(){
+		   $(".profile_dd").toggleClass("active");
+		});
+	})
+</script> -->
+<!-- <script>
+	$(".sidebar-dropdown > a").click(function() {
+		$(".sidebar-submenu").slideUp(200);
+		if (
+		$(this)
+		.parent()
+		.hasClass("active")
+		) {
+		$(".sidebar-dropdown").removeClass("active");
+		$(this)
+		.parent()
+		.removeClass("active");
+		} else {
+		$(".sidebar-dropdown").removeClass("active");
+		$(this)
+		.next(".sidebar-submenu")
+		.slideDown(200);
+		$(this)
+		.parent()
+		.addClass("active");
+		}
+		});
+
+		$("#close-sidebar").click(function() {
+		$(".page-wrapper").removeClass("toggled");
+		});
+		$("#show-sidebar").click(function() {
+		$(".page-wrapper").addClass("toggled");
+	});
+
+  </script> -->
+</html>
